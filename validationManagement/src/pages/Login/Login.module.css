@@ -1,0 +1,138 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f8ff;
+  min-height: 100vh;
+  /* background-image: url(scientist.jpg); */
+  background: #616161; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #9bc5c3, #616161); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #9bc5c3,
+    #616161
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  width: 1000px;
+  /* height: 500px; */
+  max-width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  text-align: center;
+  padding: 20px;
+  /* background-color: #007bff; */
+  color: rgb(66, 113, 183);
+  margin-top: 5%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.logo {
+  width: 100px;
+}
+
+.content {
+  display: flex;
+}
+
+.imageContainer {
+  flex: 1;
+  background-color: #e6f2ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scientistImage {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  height: 100%;
+}
+
+.formContainer {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputField {
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: space-evenly;
+  width: 80%;
+  margin-top: 10px;
+}
+
+.loginButton,
+.resetButton {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.loginButton {
+  background-color: #007bff;
+  color: white;
+}
+
+.resetButton {
+  background-color: #6c757d;
+  color: white;
+}
+
+.links {
+  margin: 10px;
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  gap: 20px;
+}
+
+/* .link a{
+  display: flex;
+  flex-direction: row;
+} */
+
+.link {
+  color: #007bff;
+  text-decoration: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.vgxpLogo {
+  width: 300px;
+  margin-left: 5px;
+}
+
+.timeZoneP{
+  margin-left: 10%;
+}

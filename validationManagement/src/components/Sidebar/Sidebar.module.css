@@ -1,0 +1,86 @@
+.sidebar {
+  width: 200px;
+  background-color: #003366;
+  color: white;
+  position: fixed;
+  height: 100%;
+  left: 0;
+  overflow: scroll;
+}
+
+.logo {
+  width: 100%;
+  background-color: white;
+}
+
+.logo img {
+  width: 200px;
+  height: 50px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  padding: 20px;
+}
+
+.sidebar li {
+  margin-bottom: 20px;
+  border-bottom: 2px solid white;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 2rem;
+}
+
+.sidebar a span {
+  font-size: 2rem;
+}
+
+.sidebar a p {
+  font-size: 1.2rem;
+}
+
+.sidebar a svg {
+  margin-right: 10px;
+}
+
+/* Active link styling */
+.active {
+  background-color: white !important;
+  color: #003366 !important;
+}
+
+.active span,
+.active p {
+  color: #003366;
+}
+
+/* Scrollbar track */
+.sidebar::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+/* Scrollbar thumb */
+.sidebar::-webkit-scrollbar-thumb {
+  background: #69a9e9;
+  border-radius: 10px;
+  border: 3px solid #f8f9fa;
+}
+
+/* Scrollbar thumb on hover */
+.sidebar::-webkit-scrollbar-thumb:hover {
+  background: #2a77c4;
+}
+
+/* Scrollbar width */
+.sidebar::-webkit-scrollbar {
+  width: 12px;
+}

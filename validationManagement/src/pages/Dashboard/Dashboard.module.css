@@ -1,0 +1,45 @@
+.content {
+  flex: 1;
+  margin-left: 200px;
+  padding: 20px;
+  margin-top: 50px;
+  overflow: auto;
+}
+
+.tabs {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.tabs button {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  background-color: #f0f8ff;
+  cursor: pointer;
+}
+
+.activeTab {
+  background-color: #007bff;
+  color: white;
+}
+
+.taskList {
+  border: 1px solid #ccc;
+}
+
+.taskHeader {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f0f8ff;
+  padding: 10px;
+}
+
+.taskContent {
+  padding: 10px;
+  text-align: center;
+}
+
+.noData {
+  color: red;
+}

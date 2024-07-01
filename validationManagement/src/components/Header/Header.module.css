@@ -1,0 +1,54 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #003366;
+  color: white;
+  padding: 0 20px;
+  height: 50px;
+  position: fixed;
+  width: 100%;
+  width: calc(100% - 200px);
+  top: 0;
+  left: 200px;
+  z-index: 1000;
+}
+
+.headerLeft {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 50px;
+}
+
+.headerCenter {
+  display: flex;
+  gap: 20px;
+}
+
+.headerRight {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.userIcon {
+  background-color: white;
+  color: #007bff;
+  border-radius: 50%;
+  padding: 5px 10px;
+}
+
+.navIcons a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+}
+
+.navIcons a svg {
+  margin-right: 5px;
+}
