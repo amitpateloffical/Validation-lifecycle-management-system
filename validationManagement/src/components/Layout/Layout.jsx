@@ -8,11 +8,12 @@ import { Outlet } from "react-router-dom";
 const Layout = () => {
   return (
     <div className={styles.container}>
-      
       <Header />
       <div className={styles.main}>
         <Sidebar />
-        <Outlet />
+        <div className={styles.content}>
+          <Outlet />
+        </div>
       </div>
     </div>
   );

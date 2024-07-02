@@ -6,40 +6,46 @@
   overflow: auto;
 }
 
-.tabs {
-  display: flex;
-  margin-bottom: 10px;
+h5 {
+  /* text-decoration: ; */
+  color: rgb(173, 108, 233) !important;
+  /* color:  #003366; */
+  text-align: left;
+  padding-left: 3%;
+  border-left: 5px solid  greenyellow;
 }
 
-.tabs button {
-  flex: 1;
+.searchInput {
+  width: 90%;
   padding: 10px;
-  border: none;
-  background-color: #f0f8ff;
-  cursor: pointer;
-}
-
-.activeTab {
-  background-color: #007bff;
-  color: white;
-}
-
-.taskList {
+  border-radius: 5px;
   border: 1px solid #ccc;
 }
 
-.taskHeader {
+.searchContainer {
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  background-color: #f0f8ff;
-  padding: 10px;
+  margin-top: 3%;
 }
-
-.taskContent {
+.searchContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.searchButton{
   padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color:  #003366;
+  color: white;
+  cursor: pointer;
+}
+.noData{
   text-align: center;
-}
-
-.noData {
   color: red;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 5%; 
+
 }

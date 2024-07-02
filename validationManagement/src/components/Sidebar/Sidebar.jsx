@@ -27,7 +27,7 @@ const Sidebar = () => {
           </NavLink>
         </li>
         <li>
-          <NavLink to="/assessment" className={styles.navLink} activeClassName={styles.active}>
+          <NavLink to="/assesment" className={styles.navLink} activeClassName={styles.active}>
             <span>
               <FaClipboardCheck />
             </span>
