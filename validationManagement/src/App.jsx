@@ -10,6 +10,9 @@ import Requirement from "./pages/Requirement/Requirement";
 import Content from "./pages/Content/Content";
 import Execution from "./pages/Execution/Execution";
 import Report from "./components/Report/Report";
+import Inventory from "./pages/Inventory/Inventory";
+import Search from "./pages/Search/Search";
+import Help from "./pages/Help/Help";
 
 export default function App() {
   return (
@@ -25,6 +28,9 @@ export default function App() {
           <Route path="/content" element={<Content />} />
           <Route path="/execution" element={<Execution />} />
           <Route path="/report" element={<Report />} />
+          <Route path="/inventory" element={<Inventory />} />
+          <Route path="/search" element={<Search />} />
+          <Route path="/help" element={<Help />} />
         </Route>
       </Routes>
     </Router>

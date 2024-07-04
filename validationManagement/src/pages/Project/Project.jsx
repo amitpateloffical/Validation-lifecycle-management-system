@@ -8,6 +8,7 @@ export default function Project() {
     <>
       <div className={styles.container}>
         <Card
+          imgLink="https://img.icons8.com/?size=100&id=hOVP4wUfSsYE&format=png&color=000000"
           headingContent={"Project"}
           paraContent={
             "Create Project to effectively manage document deliverables for Validation of system(s)"
@@ -20,6 +21,7 @@ export default function Project() {
     <>
       <div className={styles.container}>
         <Card
+          imgLink={"https://img.icons8.com/?size=100&id=y9oViyjUBfAQ&format=png&color=000000"}
           headingContent={"Project Summary"}
           paraContent={
             "Assign Project Summary to a Group or User or Self for summarizing the project"
@@ -32,10 +34,9 @@ export default function Project() {
     <>
       <div className={styles.container}>
         <Card
+          imgLink={"https://img.icons8.com/?size=100&id=y9oViyjUBfAQ&format=png&color=000000"}
           headingContent={"Project Summary"}
-          paraContent={
-            "Develop Project Summary using the associated template"
-          }
+          paraContent={"Develop Project Summary using the associated template"}
         />
       </div>
     </>
@@ -43,8 +44,13 @@ export default function Project() {
   const editData = (
     <>
       <div className={styles.container}>
-        <Card headingContent={"Project "} paraContent={"Edit,Deactivate or Terminate Project"} />
         <Card
+          imgLink="https://img.icons8.com/?size=100&id=hOVP4wUfSsYE&format=png&color=000000"
+          headingContent={"Project "}
+          paraContent={"Edit,Deactivate or Terminate Project"}
+        />
+        <Card
+          imgLink={"https://img.icons8.com/?size=100&id=y9oViyjUBfAQ&format=png&color=000000"}
           headingContent={"Project Summary"}
           paraContent={"Edit,Deactivate or Terminate Project Summary"}
         />
@@ -54,23 +60,45 @@ export default function Project() {
   const reviewData = (
     <>
       <div className={styles.container}>
-        <Card headingContent={"Project"} paraContent={"Review Project"} />
-        <Card headingContent={"Project Summary"} paraContent={"Peer review or Review Project Summary"} />
+        <Card
+          imgLink="https://img.icons8.com/?size=100&id=hOVP4wUfSsYE&format=png&color=000000"
+          headingContent={"Project"}
+          paraContent={"Review Project"}
+        />
+        <Card
+          imgLink={"https://img.icons8.com/?size=100&id=y9oViyjUBfAQ&format=png&color=000000"}
+          headingContent={"Project Summary"}
+          paraContent={"Peer review or Review Project Summary"}
+        />
       </div>
     </>
   );
   const approveData = (
     <>
       <div className={styles.container}>
-        <Card headingContent={"Project"} paraContent={"Approve or Reject Project"} />
-        <Card headingContent={"Project Summary"} paraContent={"Approve or Reject Project Summary"} />
+        <Card
+          imgLink="https://img.icons8.com/?size=100&id=hOVP4wUfSsYE&format=png&color=000000"
+          headingContent={"Project"}
+          paraContent={"Approve or Reject Project"}
+        />
+        <Card
+          imgLink={"https://img.icons8.com/?size=100&id=y9oViyjUBfAQ&format=png&color=000000"}
+          headingContent={"Project Summary"}
+          paraContent={"Approve or Reject Project Summary"}
+        />
       </div>
     </>
   );
   const updateData = (
     <>
       <div className={styles.container}>
-        <Card headingContent={"Project"} paraContent={"Update Project with tasks defined as external or additional during Project creation"} />
+        <Card
+          imgLink="https://img.icons8.com/?size=100&id=hOVP4wUfSsYE&format=png&color=000000"
+          headingContent={"Project"}
+          paraContent={
+            "Update Project with tasks defined as external or additional during Project creation"
+          }
+        />
       </div>
     </>
   );

@@ -8,6 +8,14 @@ export default function Execution() {
     <>
       <div className={styles.container}>
         <Card
+          headingContent={"Dry Run"}
+          paraContent={"Trigger a sample run of pre-approved document which is to be executed in the system"}
+        />
+        <Card
+          headingContent={"Electronic"}
+          paraContent={"Execution document electronically"}
+        />
+        <Card
           headingContent={"Manual"}
           paraContent={"Execution is done with pen and paper. Executed document is scanned back to electronic format as PDF"}
         />

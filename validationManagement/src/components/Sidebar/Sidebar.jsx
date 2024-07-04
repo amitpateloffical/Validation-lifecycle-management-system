@@ -19,7 +19,10 @@ const Sidebar = () => {
       </div>
       <ul>
         <li>
-          <NavLink to="/system" className={styles.navLink} activeClassName={styles.active}>
+          <NavLink
+            to="/system"
+            className={({ isActive }) => `${styles.navLink} ${isActive ? styles.active : ""}`}
+          >
             <span>
               <FaCogs />
             </span>
@@ -27,7 +30,10 @@ const Sidebar = () => {
           </NavLink>
         </li>
         <li>
-          <NavLink to="/assesment" className={styles.navLink} activeClassName={styles.active}>
+          <NavLink
+            to="/assesment"
+            className={({ isActive }) => `${styles.navLink} ${isActive ? styles.active : ""}`}
+          >
             <span>
               <FaClipboardCheck />
             </span>
@@ -35,7 +41,11 @@ const Sidebar = () => {
           </NavLink>
         </li>
         <li>
-          <NavLink to="/project" className={styles.navLink} activeClassName={styles.active}>
+          <NavLink
+            to="/project"
+            className={({ isActive }) => `${styles.navLink} ${isActive ? styles.active : ""}`}
+            // activeClassName={styles.active}
+          >
             <span>
               <FaProjectDiagram />
             </span>
@@ -43,7 +53,10 @@ const Sidebar = () => {
           </NavLink>
         </li>
         <li>
-          <NavLink to="/requirement" className={styles.navLink} activeClassName={styles.active}>
+          <NavLink
+            to="/requirement"
+            className={({ isActive }) => `${styles.navLink} ${isActive ? styles.active : ""}`}
+          >
             <span>
               <FaTasks />
             </span>
@@ -51,7 +64,10 @@ const Sidebar = () => {
           </NavLink>
         </li>
         <li>
-          <NavLink to="/content" className={styles.navLink} activeClassName={styles.active}>
+          <NavLink
+            to="/content"
+            className={({ isActive }) => `${styles.navLink} ${isActive ? styles.active : ""}`}
+          >
             <span>
               <FaFileAlt />
             </span>
@@ -59,7 +75,10 @@ const Sidebar = () => {
           </NavLink>
         </li>
         <li>
-          <NavLink to="/execution" className={styles.navLink} activeClassName={styles.active}>
+          <NavLink
+            to="/execution"
+            className={({ isActive }) => `${styles.navLink} ${isActive ? styles.active : ""}`}
+          >
             <span>
               <FaEdit />
             </span>
@@ -67,7 +86,10 @@ const Sidebar = () => {
           </NavLink>
         </li>
         <li>
-          <NavLink to="/report" className={styles.navLink} activeClassName={styles.active}>
+          <NavLink
+            to="/report"
+            className={({ isActive }) => `${styles.navLink} ${isActive ? styles.active : ""}`}
+          >
             <span>
               <FaMicrophone />
             </span>

@@ -3,6 +3,7 @@ import { FaHome, FaBox, FaSyncAlt, FaSearch, FaQuestionCircle, FaSignOutAlt } fr
 import { IoIosArrowDropdownCircle } from "react-icons/io";
 
 import styles from "./Header.module.css";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -22,24 +23,24 @@ const Header = () => {
           <IoIosArrowDropdownCircle style={{ fontSize: "20px" }} />
         </div>
         <div className={styles.navIcons}>
-          <a href="#">
+          <NavLink to={"/dashboard"}>
             <FaHome /> Home
-          </a>
-          <a href="#">
+          </NavLink>
+          <NavLink to={"/inventory"}>
             <FaBox /> Inventory
-          </a>
-          <a href="#">
+          </NavLink>
+          <NavLink  onClick={() => window.location.reload(true)}>
             <FaSyncAlt /> Refresh
-          </a>
-          <a href="#">
+          </NavLink>
+          <NavLink to={"/search"}>
             <FaSearch /> Search
-          </a>
-          <a href="#">
+          </NavLink>
+          <NavLink to={"/help"}>
             <FaQuestionCircle /> Help
-          </a>
-          <a href="#">
+          </NavLink>
+          <NavLink to={"/"}>
             <FaSignOutAlt /> Logout
-          </a>
+          </NavLink>
         </div>
       </div>
     </header>

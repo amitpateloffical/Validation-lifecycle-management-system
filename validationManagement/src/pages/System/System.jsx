@@ -8,18 +8,7 @@ export default function System() {
     <>
       <div className={styles.container}>
         <Card
-          headingContent={"Mapping Keyword"}
-          paraContent={"Edit, Deactivate, Reactivate or Terminate Mapping keyword"}
-        />
-        <Card
-          headingContent={"Mapping Keyword"}
-          paraContent={"Edit, Deactivate, Reactivate or Terminate Mapping keyword"}
-        />
-        <Card
-          headingContent={"Mapping Keyword"}
-          paraContent={"Edit, Deactivate, Reactivate or Terminate Mapping keyword"}
-        />
-        <Card
+          imgLink={"https://img.icons8.com/?size=100&id=DfHwHLuIf2Sw&format=png&color=000000"}
           headingContent={"Mapping Keyword"}
           paraContent={"Edit, Deactivate, Reactivate or Terminate Mapping keyword"}
         />

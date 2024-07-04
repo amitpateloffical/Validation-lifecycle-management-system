@@ -4,28 +4,18 @@ import Card from "../../components/Cards/Card";
 import Tab from "../../components/Tabs/Tabs";
 
 export default function Assesment() {
-  const  performData = (
-    <>
-      <div className={styles.container}>
-        <Card
-          headingContent={"Assesment"}
-          paraContent={
-            "Perform Assesment based upon assignment of the task"
-          }
-        />
-      </div>
-    </>
-  );
   const createData = (
     <>
       <div className={styles.container}>
         <Card
+          imgLink={"https://img.icons8.com/?size=100&id=7plf760YG6D3&format=png&color=000000"}
           headingContent={"Validation Plan"}
           paraContent={
             "Create Validation Plan for entities with defined mapping name, scope and description"
           }
         />
         <Card
+          imgLink={"https://img.icons8.com/?size=100&id=qGGl2WuDAF0Z&format=png&color=000000"}
           headingContent={"Validation Summary "}
           paraContent={
             "Create Validation summary for entities with defined name, scope and description"
@@ -34,14 +24,28 @@ export default function Assesment() {
       </div>
     </>
   );
+  const performData = (
+    <>
+      <div className={styles.container}>
+        <Card
+          imgLink={"https://img.icons8.com/?size=100&id=117512&format=png&color=000000"}
+          headingContent={"Assesment"}
+          paraContent={"Perform Assesment based upon assignment of the task"}
+        />
+      </div>
+    </>
+  );
+
   const editData = (
     <>
       <div className={styles.container}>
         <Card
+          imgLink={"https://img.icons8.com/?size=100&id=7plf760YG6D3&format=png&color=000000"}
           headingContent={"Validation Plan"}
           paraContent={"Edit or Terminate Validation Plan  "}
         />
         <Card
+          imgLink={"https://img.icons8.com/?size=100&id=qGGl2WuDAF0Z&format=png&color=000000"}
           headingContent={"Validation Summary "}
           paraContent={"Edit or Terminate Validation Summary"}
         />

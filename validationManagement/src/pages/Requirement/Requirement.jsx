@@ -8,10 +8,12 @@ export default function Requirement() {
     <>
       <div className={styles.container}>
         <Card
+          imgLink="https://img.icons8.com/?size=100&id=67561&format=png&color=000000"
           headingContent={"Trace Matrix"}
           paraContent={"Develop Trace Matrix based on trace models bound with the entity"}
         />
         <Card
+          imgLink="https://img.icons8.com/?size=100&id=BgtYnJlfI2-j&format=png&color=000000"
           headingContent={"Trace Model"}
           paraContent={
             "Create trace models by choosing content type and specifying relationship between them"
@@ -24,6 +26,7 @@ export default function Requirement() {
     <>
       <div className={styles.container}>
         <Card
+          imgLink="https://img.icons8.com/?size=100&id=67561&format=png&color=000000"
           headingContent={"Trace"}
           paraContent={
             "View Traceability Matrices to identify Requirements or Tests which have been impacted through CCR"
@@ -35,14 +38,22 @@ export default function Requirement() {
   const editData = (
     <>
       <div className={styles.container}>
-        <Card headingContent={"Trace"} paraContent={"Edit traceability  "} />
+        <Card
+          imgLink="https://img.icons8.com/?size=100&id=67561&format=png&color=000000"
+          headingContent={"Trace"}
+          paraContent={"Edit traceability  "}
+        />
       </div>
     </>
   );
   const reviewData = (
     <>
       <div className={styles.container}>
-        <Card headingContent={"Trace"} paraContent={"Review traceability  "} />
+        <Card
+          imgLink="https://img.icons8.com/?size=100&id=67561&format=png&color=000000"
+          headingContent={"Trace"}
+          paraContent={"Review traceability  "}
+        />
       </div>
     </>
   );
@@ -50,6 +61,7 @@ export default function Requirement() {
     <>
       <div className={styles.container}>
         <Card
+          imgLink="https://img.icons8.com/?size=100&id=67561&format=png&color=000000"
           headingContent={"Trace"}
           paraContent={"Approve or Reject Trace Model and Trace Matrix"}
         />
