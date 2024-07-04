@@ -4,52 +4,45 @@ import Card from "../../components/Cards/Card";
 import Tab from "../../components/Tabs/Tabs";
 
 export default function Report() {
-  const performData = (
+  const viewData = (
     <>
       <div className={styles.container}>
         <Card
-          headingContent={"Assesment"}
-          paraContent={"Perform Assesment based upon assignment of the task"}
+          headingContent={"Audit Trail Report"}
+          paraContent={"View Standard Audit Trail Report of each activity under all modules"}
         />
-      </div>
-    </>
-  );
-  const createData = (
-    <>
-      <div className={styles.container}>
         <Card
-          headingContent={"Validation Plan"}
+          headingContent={"Bind Entity Report "}
           paraContent={
-            "Create Validation Plan for entities with defined mapping name, scope and description"
+            "View Standard Bind Entity Report for Entities bound to a category/subcategory"
           }
         />
         <Card
-          headingContent={"Validation Summary "}
+          headingContent={"Bind Template Report"}
           paraContent={
-            "Create Validation summary for entities with defined name, scope and description"
+            "View Standard Bind Template Report for the document  to which selected template is bound"
           }
         />
-      </div>
-    </>
-  );
-  const editData = (
-    <>
-      <div className={styles.container}>
         <Card
-          headingContent={"Validation Plan"}
-          paraContent={"Edit or Terminate Validation Plan  "}
-        />
-        <Card
-          headingContent={"Validation Summary "}
-          paraContent={"Edit or Terminate Validation Summary"}
+          headingContent={"Email Report"}
+          paraContent={
+            "View Standard Email Report for the emails generated during the selected duration"
+          }
         />
       </div>
     </>
   );
 
+  const editData = (
+    <>
+      <div className={styles.container}>
+        <Card headingContent={"Ad Hoc Report"} paraContent={"Edit or Terminate Ad Hoc Reports "} />
+      </div>
+    </>
+  );
+
   const tabs = [
-    { label: "Create", content: createData },
-    { label: "Perform", content: performData },
+    { label: "Create", content: viewData },
     { label: "Edit", content: editData },
   ];
   return (

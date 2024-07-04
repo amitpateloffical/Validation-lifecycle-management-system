@@ -13,7 +13,9 @@ export default function Requirement() {
         />
         <Card
           headingContent={"Trace Model"}
-          paraContent={"Create trace models by choosing content type and specifying relationship between them"}
+          paraContent={
+            "Create trace models by choosing content type and specifying relationship between them"
+          }
         />
       </div>
     </>
@@ -27,40 +29,20 @@ export default function Requirement() {
             "View Traceability Matrices to identify Requirements or Tests which have been impacted through CCR"
           }
         />
-        <Card
-          headingContent={"Validation Summary "}
-          paraContent={
-            "Create Validation summary for entities with defined name, scope and description"
-          }
-        />
       </div>
     </>
   );
   const editData = (
     <>
       <div className={styles.container}>
-        <Card
-          headingContent={"Validation Plan"}
-          paraContent={"Edit or Terminate Validation Plan  "}
-        />
-        <Card
-          headingContent={"Validation Summary "}
-          paraContent={"Edit or Terminate Validation Summary"}
-        />
+        <Card headingContent={"Trace"} paraContent={"Edit traceability  "} />
       </div>
     </>
   );
   const reviewData = (
     <>
       <div className={styles.container}>
-        <Card
-          headingContent={"Validation Plan"}
-          paraContent={"Edit or Terminate Validation Plan  "}
-        />
-        <Card
-          headingContent={"Validation Summary "}
-          paraContent={"Edit or Terminate Validation Summary"}
-        />
+        <Card headingContent={"Trace"} paraContent={"Review traceability  "} />
       </div>
     </>
   );
@@ -68,12 +50,8 @@ export default function Requirement() {
     <>
       <div className={styles.container}>
         <Card
-          headingContent={"Validation Plan"}
-          paraContent={"Edit or Terminate Validation Plan  "}
-        />
-        <Card
-          headingContent={"Validation Summary "}
-          paraContent={"Edit or Terminate Validation Summary"}
+          headingContent={"Trace"}
+          paraContent={"Approve or Reject Trace Model and Trace Matrix"}
         />
       </div>
     </>

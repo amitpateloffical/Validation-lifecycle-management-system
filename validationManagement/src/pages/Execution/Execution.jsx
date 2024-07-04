@@ -4,53 +4,64 @@ import Card from "../../components/Cards/Card";
 import Tab from "../../components/Tabs/Tabs";
 
 export default function Execution() {
-  const performData = (
+  const executeData = (
     <>
       <div className={styles.container}>
         <Card
-          headingContent={"Assesment"}
-          paraContent={"Perform Assesment based upon assignment of the task"}
-        />
-      </div>
-    </>
-  );
-  const createData = (
-    <>
-      <div className={styles.container}>
-        <Card
-          headingContent={"Validation Plan"}
-          paraContent={
-            "Create Validation Plan for entities with defined mapping name, scope and description"
-          }
+          headingContent={"Manual"}
+          paraContent={"Execution is done with pen and paper. Executed document is scanned back to electronic format as PDF"}
         />
         <Card
-          headingContent={"Validation Summary "}
-          paraContent={
-            "Create Validation summary for entities with defined name, scope and description"
-          }
-        />
-      </div>
-    </>
-  );
-  const editData = (
-    <>
-      <div className={styles.container}>
-        <Card
-          headingContent={"Validation Plan"}
-          paraContent={"Edit or Terminate Validation Plan  "}
+          headingContent={"Discrepancy"}
+          paraContent={"Failures during electronic execution is captured & managed through electronic exception handling process"}
         />
         <Card
-          headingContent={"Validation Summary "}
-          paraContent={"Edit or Terminate Validation Summary"}
+          headingContent={"Pending Discrepancies"}
+          paraContent={"View of Discrepancies with additonal document deliverales"}
+        />
+        <Card
+          headingContent={"Returned Discrepancies"}
+          paraContent={"Provide More information or Re-execute Discrepancy"}
         />
       </div>
     </>
   );
 
+  const editData = (
+    <>
+      <div className={styles.container}>
+        <Card
+          headingContent={"Execution"}
+          paraContent={"Edit, Deactivate, Reactivate or Terminate Execution"}
+        />
+        <Card
+          headingContent={"Discrepancy"}
+          paraContent={"Edit, Deactivate, Reactivate or Terminate Discrepancy"}
+        />
+        <Card
+          headingContent={"Dry Run"}
+          paraContent={"Edit or Terminate Dry Run"}
+        />
+      </div>
+    </>
+  );
+
+    const approveData = (
+      <>
+        <div className={styles.container}>
+          <Card
+            headingContent={"Execution Transfer"}
+            paraContent={
+              "Accept or Reject Execution Transfer task"
+            }
+          />
+        </div>
+      </>
+    );
   const tabs = [
-    { label: "Create", content: createData },
-    { label: "Perform", content: performData },
+    { label: "Execute", content: executeData },
     { label: "Edit", content: editData },
+    { label: "Approve", content: approveData },
   ];
   return (
     <>
