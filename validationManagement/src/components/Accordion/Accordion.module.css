@@ -1,0 +1,27 @@
+.accordion {
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+    rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    margin: 20px;
+    /* font-size: 1rem; */
+}
+.accordionSummary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+}
+
+.accordionSummaryLeft {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  gap: 20px;
+  width: 30%;
+}
+.accordionSummaryLeft img {
+  width: 40px;
+}
+
+.table {
+  width: 100%;
+}
