@@ -69,7 +69,7 @@ export default function Assesment() {
     {
       accName: "WIP Validation Plan",
       noOfRecords: "No Data Available",
-    }
+    },
   ];
   const editValidationSummary = [
     {
@@ -79,13 +79,13 @@ export default function Assesment() {
     {
       accName: "WIP Validation Summary",
       noOfRecords: "No Data Available",
-    }
+    },
   ];
   const createData = (
     <>
       <div className={styles.container}>
         <div onClick={() => handleClick(" Select Validation Plan", validationPlanData)}>
-          <Card
+          <Card 
             imgLink={"https://img.icons8.com/?size=100&id=7plf760YG6D3&format=png&color=000000"}
             headingContent={"Validation Plan"}
             paraContent={
