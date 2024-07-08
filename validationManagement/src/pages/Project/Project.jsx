@@ -113,6 +113,25 @@ export default function Project() {
       noOfRecords: "No Data Available",
     },
   ];
+  const approveProject = [
+    {
+      accName: "Select Project to Approve",
+      noOfRecords: "No Data Available",
+    },
+  ];
+  const approveProjectSummary = [
+    {
+      accName: "Project SUmmary Approval",
+      noOfRecords: "No Data Available",
+    },
+  ];
+  const updateProject = [
+    {
+      accName: "WIP Projects",
+      noOfRecords: "No Data Available",
+    },
+  ];
+  
   const createData = (
     <>
       <div className={styles.container}>
@@ -205,14 +224,14 @@ export default function Project() {
   const approveData = (
     <>
       <div className={styles.container}>
-        <div onClick={() => handleClick(" Select Validation Plan", validationPlanData)}>
+        <div onClick={() => handleClick(" Select Project to Approve", approveProject)}>
           <Card
             imgLink="https://img.icons8.com/?size=100&id=hOVP4wUfSsYE&format=png&color=000000"
             headingContent={"Project"}
             paraContent={"Approve or Reject Project"}
           />
         </div>
-        <div onClick={() => handleClick(" Select Validation Plan", validationPlanData)}>
+        <div onClick={() => handleClick(" Select PRoject Summary to Approve", approveProjectSummary)}>
           <Card
             imgLink={"https://img.icons8.com/?size=100&id=y9oViyjUBfAQ&format=png&color=000000"}
             headingContent={"Project Summary"}
@@ -225,7 +244,7 @@ export default function Project() {
   const updateData = (
     <>
       <div className={styles.container}>
-        <div onClick={() => handleClick(" Select Validation Plan", validationPlanData)}>
+        <div onClick={() => handleClick(" Select Project", updateProject)}>
           <Card
             imgLink="https://img.icons8.com/?size=100&id=hOVP4wUfSsYE&format=png&color=000000"
             headingContent={"Project"}
