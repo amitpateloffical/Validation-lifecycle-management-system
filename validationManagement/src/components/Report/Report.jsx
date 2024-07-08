@@ -25,10 +25,16 @@ export default function Report() {
       noOfRecords: "No Data Available",
     },
   ];
+  const viewAuditTrailReport = [
+    {
+      accName: "Select Project to Approve",
+      noOfRecords: "No Data Available",
+    },
+  ];
   const viewData = (
     <>
       <div className={styles.container}>
-        <div onClick={() => handleClick(" Select Project to Approve", approveProject)}>
+        <div onClick={() => handleClick(" Select Project to Approve", viewAuditTrailReport)}>
           <Card
             imgLink="https://img.icons8.com/?size=100&id=124202&format=png&color=000000"
             headingContent="Audit Trail Report"
@@ -37,7 +43,7 @@ export default function Report() {
         </div>
         <div onClick={() => handleClick(" Select Project to Approve", approveProject)}>
           <Card
-            headingContent={"Bind Entity Report "}
+            headingContent={"Bind Entity Report"}
             paraContent={
               "View Standard Bind Entity Report for Entities bound to a category/subcategory"
             }

@@ -25,11 +25,81 @@ export default function Requirement() {
       noOfRecords: "No Data Available",
     },
   ];
+  const developTraceMatrix = [
+    {
+      accName: "Reviewed Trace Matrix",
+      noOfRecords: "No Data Available",
+    },
+    {
+      accName: "Rejected Trace Matrix",
+      noOfRecords: "No Data Available",
+    },
+    {
+      accName: "Saved Trace Matrix",
+      noOfRecords: "No Data Available",
+    },
+  ];
+  const developTraceModel = [
+    {
+      accName: "Reviewed Trace Model",
+      noOfRecords: "No Data Available",
+    },
+    {
+      accName: "Rejected Trace Model",
+      noOfRecords: "No Data Available",
+    },
+    {
+      accName: "Saved Trace Model",
+      noOfRecords: "No Data Available",
+    },
+  ];
+  const editTrace = [
+    {
+      accName: "WIP Trace Models",
+      noOfRecords: "No Data Available",
+    },
+    {
+      accName: "WIP Trace Matrices",
+      noOfRecords: "No Data Available",
+    },
+    {
+      accName: "Active Trace Models",
+      noOfRecords: "No Data Available",
+    },
+  ];
+  const reviewTrace = [
+    {
+      accName: "Trace Models for Review",
+      noOfRecords: "No Data Available",
+    },
+    {
+      accName: "Trace Models for Peer Review",
+      noOfRecords: "No Data Available",
+    },
+    {
+      accName: "Trace Matrices for Review",
+      noOfRecords: "No Data Available",
+    },
+    {
+      accName: "Trace Matrices for Peer Review",
+      noOfRecords: "No Data Available",
+    },
+  ];
+  const approveTrace = [
+    {
+      accName: "Trace Models for Approval",
+      noOfRecords: "No Data Available",
+    },
+    {
+      accName: "Trace Matrices for Approval",
+      noOfRecords: "No Data Available",
+    },
+  ];
 
   const developData = (
     <>
       <div className={styles.container}>
-        <div onClick={() => handleClick(" Select Project to Approve", approveProject)}>
+        <div onClick={() => handleClick("Select Trace Matrix to Develop", developTraceMatrix)}>
           <Card
             imgLink="https://img.icons8.com/?size=100&id=67561&format=png&color=000000"
             headingContent={"Trace Matrix"}
@@ -37,7 +107,7 @@ export default function Requirement() {
           />
         </div>
 
-        <div onClick={() => handleClick(" Select Project to Approve", approveProject)}>
+        <div onClick={() => handleClick("Select Trace Model to Develop", developTraceModel)}>
           <Card
             imgLink="https://img.icons8.com/?size=100&id=BgtYnJlfI2-j&format=png&color=000000"
             headingContent={"Trace Model"}
@@ -52,7 +122,7 @@ export default function Requirement() {
   const maintainData = (
     <>
       <div className={styles.container}>
-        <div onClick={() => handleClick(" Select Project to Approve", approveProject)}>
+        <div onClick={() => handleClick(" Maintain Trace", approveProject)}>
           <Card
             imgLink="https://img.icons8.com/?size=100&id=67561&format=png&color=000000"
             headingContent={"Trace"}
@@ -67,7 +137,7 @@ export default function Requirement() {
   const editData = (
     <>
       <div className={styles.container}>
-        <div onClick={() => handleClick(" Select Project to Approve", approveProject)}>
+        <div onClick={() => handleClick("Select Trace to Edit", editTrace)}>
           <Card
             imgLink="https://img.icons8.com/?size=100&id=67561&format=png&color=000000"
             headingContent={"Trace"}
@@ -80,7 +150,7 @@ export default function Requirement() {
   const reviewData = (
     <>
       <div className={styles.container}>
-        <div onClick={() => handleClick(" Select Project to Approve", approveProject)}>
+        <div onClick={() => handleClick(" Select Trace to Review", reviewTrace)}>
           <Card
             imgLink="https://img.icons8.com/?size=100&id=67561&format=png&color=000000"
             headingContent={"Trace"}
@@ -93,7 +163,7 @@ export default function Requirement() {
   const approveData = (
     <>
       <div className={styles.container}>
-        <div onClick={() => handleClick(" Select Project to Approve", approveProject)}>
+        <div onClick={() => handleClick(" Select Trace to Approval", approveTrace)}>
           <Card
             imgLink="https://img.icons8.com/?size=100&id=67561&format=png&color=000000"
             headingContent={"Trace"}
