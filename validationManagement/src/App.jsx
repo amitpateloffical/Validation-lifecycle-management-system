@@ -13,12 +13,18 @@ import Report from "./components/Report/Report";
 import Inventory from "./pages/Inventory/Inventory";
 import Search from "./pages/Search/Search";
 import Help from "./pages/Help/Help";
+import SignUp from "./pages/SignUp/SignUp";
+import MessageAdmin from "./pages/MessageAdmin/MessageAdmin";
+import ForgotPasword from "./pages/ForgotPassword/ForgotPassword";
 
 export default function App() {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<Login />} />
+        <Route path="/sign-up" element={<SignUp />} />
+        <Route path="/contact-admin" element={<MessageAdmin />} />
+        <Route path="/forgot-password" element={<ForgotPasword />} />
         <Route element={<Layout />}>
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/system" element={<System />} />

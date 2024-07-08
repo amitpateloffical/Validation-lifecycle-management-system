@@ -19,15 +19,15 @@ const Login = () => {
   }
 
   const handleSignUp = () => {
-    navigate("/signup");
+    navigate("/sign-up");
   }
 
   const handleContactAdmin = () => {
-    navigate("/contactadmin");
+    navigate("/contact-admin");
   }
 
   const handleForgotPassword = () => {
-    navigate("/forgotpassword");
+    navigate("/forgot-password");
   }
 
   return (

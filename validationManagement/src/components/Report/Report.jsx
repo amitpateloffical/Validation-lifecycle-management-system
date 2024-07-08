@@ -25,9 +25,17 @@ export default function Report() {
       noOfRecords: "No Data Available",
     },
   ];
+
   const viewAuditTrailReport = [
     {
       accName: "Select Project to Approve",
+      noOfRecords: "No Data Available",
+    },
+  ];
+
+  const editADhocReport = [
+    {
+      accName: "Select Ad Hoc Report to Edit",
       noOfRecords: "No Data Available",
     },
   ];
@@ -41,7 +49,7 @@ export default function Report() {
             paraContent={"View Standard Audit Trail Report of each activity under all modules"}
           />
         </div>
-        <div onClick={() => handleClick(" Select Project to Approve", approveProject)}>
+        <div onClick={() => handleClick(" Entity Binding Report", approveProject)}>
           <Card
             headingContent={"Bind Entity Report"}
             paraContent={
@@ -143,7 +151,7 @@ export default function Report() {
   const editData = (
     <>
       <div className={styles.container}>
-        <div onClick={() => handleClick(" Select Project to Approve", approveProject)}>
+        <div onClick={() => handleClick(" Select Ad Hoc Report to Edit", editADhocReport)}>
           <Card
             headingContent={"Ad Hoc Report"}
             paraContent={"Edit or Terminate Ad Hoc Reports "}
