@@ -43,10 +43,11 @@
 }
 
 .navIcons {
-    display: flex;
-    align-items: center;
-    gap: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
+
 .navIcons a {
   color: white;
   text-decoration: none;
@@ -58,9 +59,47 @@
 .navIcons a svg {
   margin-right: 5px;
 }
-.userDetails{
-    display: flex;
-    align-items: center;
-    gap: 7px;
-    color: white;
+
+.userDetails {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: white;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: absolute;
+  display: flex;
+  background-color: #003366;
+  color: white;
+  padding: 10px 20px;
+  /* border-radius: 5px; */
+  top: 50px;
+  /* border: #003366 1px solid; */
+}
+
+.dropdown-item {
+  cursor: pointer;
+  padding: 5px 0;
+}
+
+.dropdown-item:hover {
+  background-color: #007bff;
+}
+
+.dropdownDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.userIcon2 {
+  background-color: rgb(161, 155, 155);
+  color: black;
+  border-radius: 50%;
+  padding: 5px 10px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
