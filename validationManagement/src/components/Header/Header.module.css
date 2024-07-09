@@ -103,3 +103,96 @@
   align-items: center;
   justify-content: center;
 }
+
+.active {
+  background-color: white;
+  color: #003366;
+  border-radius: 20px;
+  height: 30px;
+  padding: 1%;
+}
+
+.active span,
+.active p {
+  color: #003366;
+}
+
+.active svg {
+  color: #003366;
+}
+.navLink {
+  display: flex;
+}
+.navLink p {
+  display: flex;
+  margin-top: 13px;
+}
+
+/*  */
+
+.headerRight {
+  display: flex;
+  align-items: center;
+}
+
+.userDetailsContainer {
+  position: relative;
+}
+
+.userDetails {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.userIcon {
+  margin-right: 10px;
+  background: #ccc;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.userIcon2 {
+  background: #ccc;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: #003366;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.dropdownDiv {
+  padding: 1px;
+}
+
+.navIcons {
+  display: flex;
+  align-items: center;
+}
+
+.navLink {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.navLink p {
+  margin-left: 5px;
+}
+
+.active {
+  background-color: #f0f0f0;
+}
+
+.link :hover {
+  background-color: white;
+  color: #003366;
+}

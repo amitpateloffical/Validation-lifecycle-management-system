@@ -27,7 +27,11 @@
 .searchingParameter {
   margin-bottom: 20px;
 }
-
+.configureDisplayFields{
+  /* display: flex;
+  flex-wrap: wrap; */
+  /* width: 100%; */
+}
 .formGroup {
   margin-bottom: 10px;
 }
@@ -42,10 +46,18 @@ select {
   width: 100%;
   padding: 8px;
   box-sizing: border-box;
+  border: 1px solid black;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
 }
 
 .leftContainer input[type="checkbox"] {
   margin-right: 10px;
+  border: 1px solid black;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
 }
 
 .searchButton {

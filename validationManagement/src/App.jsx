@@ -16,6 +16,7 @@ import Help from "./pages/Help/Help";
 import SignUp from "./pages/SignUp/SignUp";
 import MessageAdmin from "./pages/MessageAdmin/MessageAdmin";
 import ForgotPasword from "./pages/ForgotPassword/ForgotPassword";
+import Profile from "./pages/Profile/Profile";
 
 export default function App() {
   return (
@@ -37,6 +38,7 @@ export default function App() {
           <Route path="/inventory" element={<Inventory />} />
           <Route path="/search" element={<Search />} />
           <Route path="/help" element={<Help />} />
+          <Route path="/profile" element={<Profile />} />
         </Route>
       </Routes>
     </Router>
