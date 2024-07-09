@@ -48,13 +48,13 @@ export default function Inventory() {
     <>
       <div className="grid grid-cols-5 gap-2 p-1">
         <div className="col-span-2 bg-gray-100 shadow-lg h-[760px]">
-          <div className="flex gap-4 py-2 border border-b-[#003366]">
+          <div className="flex gap-4 py-2 border border-b-[#003366] p-2">
             <div
               className={`${
                 isSelected === "entity"
                   ? "bg-[#003366] text-white p-1 rounded-md"
                   : ""
-              }`}
+              } cursor-pointer`}
               onClick={() => setIsSelected("entity")}
             >
               Entity
@@ -64,7 +64,7 @@ export default function Inventory() {
                 isSelected === "favorites"
                   ? "bg-[#003366] text-white p-1 rounded-md"
                   : ""
-              }`}
+              } cursor-pointer`}
               onClick={() => setIsSelected("favorites")}
             >
               Favorites
@@ -74,7 +74,7 @@ export default function Inventory() {
                 isSelected === "history"
                   ? "bg-[#003366] text-white p-1 rounded-md"
                   : ""
-              }`}
+              } cursor-pointer`}
               onClick={() => setIsSelected("history")}
             >
               History
@@ -109,7 +109,7 @@ export default function Inventory() {
                     <div>
                       <TopicTwoToneIcon />
                     </div>
-                    <div> Approved</div>
+                    <div className="cursor-pointer"> Approved</div>
                   </div>
                   {isApproved ? (
                     <>
@@ -124,7 +124,7 @@ export default function Inventory() {
                           <div>
                             <TopicTwoToneIcon />
                           </div>
-                          <div> RTM</div>
+                          <div className="cursor-pointer"> RTM</div>
                         </div>
                       </div>
                       {isRTM ? (
@@ -135,7 +135,10 @@ export default function Inventory() {
                                 <div>
                                   <InventoryTwoToneIcon />
                                 </div>
-                                <div onClick={handleTrackModel}>
+                                <div
+                                  onClick={handleTrackModel}
+                                  className="cursor-pointer"
+                                >
                                   Q/DDTM/002.01
                                 </div>
                               </div>
@@ -147,7 +150,10 @@ export default function Inventory() {
                                 <div>
                                   <InventoryTwoToneIcon />
                                 </div>
-                                <div onClick={handleTrackModel}>
+                                <div
+                                  onClick={handleTrackModel}
+                                  className="cursor-pointer"
+                                >
                                   Q/DDTM/004.01
                                 </div>
                               </div>
@@ -159,7 +165,10 @@ export default function Inventory() {
                                 <div>
                                   <InventoryTwoToneIcon />
                                 </div>
-                                <div onClick={handleTrackModel}>
+                                <div
+                                  onClick={handleTrackModel}
+                                  className="cursor-pointer"
+                                >
                                   Q/DDTM/005.01
                                 </div>
                               </div>
@@ -171,7 +180,10 @@ export default function Inventory() {
                                 <div>
                                   <InventoryTwoToneIcon />
                                 </div>
-                                <div onClick={handleTrackModel}>
+                                <div
+                                  onClick={handleTrackModel}
+                                  className="cursor-pointer"
+                                >
                                   Q/DDTM/006.01
                                 </div>
                               </div>
@@ -246,7 +258,9 @@ export default function Inventory() {
                       <div>
                         <TopicTwoToneIcon />
                       </div>
-                      <div>Inactive/Terminated/Suspended</div>
+                      <div className="cursor-pointer">
+                        Inactive/Terminated/Suspended
+                      </div>
                     </div>
                   </div>
                   <div className=" border-l-2 border-dotted border-l-gray-500 ml-3 mt-2 ">
@@ -254,7 +268,7 @@ export default function Inventory() {
                       <div>
                         <TopicTwoToneIcon />
                       </div>
-                      <div>WIP</div>
+                      <div className="cursor-pointer">WIP</div>
                     </div>
                   </div>
                 </div>
@@ -1093,13 +1107,13 @@ export default function Inventory() {
     <>
       <div className="grid grid-cols-5 gap-2 p-1">
         <div className="col-span-2 bg-gray-100 shadow-lg h-[760px]">
-          <div className="flex gap-4 py-2 border border-b-[#003366]">
+          <div className="flex gap-4 py-2 border border-b-[#003366] p-2">
             <div
               className={`${
                 isSelected === "entity"
                   ? "bg-[#003366] text-white p-1 rounded-md"
                   : ""
-              }`}
+              } cursor-pointer `}
               onClick={() => setIsSelected("entity")}
             >
               Entity
@@ -1109,7 +1123,7 @@ export default function Inventory() {
                 isSelected === "favorites"
                   ? "bg-[#003366] text-white p-1 rounded-md"
                   : ""
-              }`}
+              } cursor-pointer`}
               onClick={() => setIsSelected("favorites")}
             >
               Favorites
@@ -1119,7 +1133,7 @@ export default function Inventory() {
                 isSelected === "history"
                   ? "bg-[#003366] text-white p-1 rounded-md"
                   : ""
-              }`}
+              } cursor-pointer`}
               onClick={() => setIsSelected("history")}
             >
               History
@@ -2152,7 +2166,7 @@ export default function Inventory() {
         <div>
           <input
             placeholder="Search Here"
-            className="rounded-full border border-black py-2 px-2 ml-4"
+            className="rounded-full border border-black py-2 px-3 ml-4"
           />
         </div>
 
