@@ -2183,7 +2183,7 @@ export default function Inventory() {
       <Dialog open={isOpen} maxWidth={"xl"} fullWidth={true}>
         <div className=" p-3">
           <div className="flex justify-end">
-            <RxCross1 onClick={() => setIsOpen(false)} size={25} color="blue" />
+            <RxCross1 onClick={() => setIsOpen(false)} size={25} color="blue" className="cursor-pointer" />
           </div>
           <div className="border-b-2  border-indigo-500">
             <h5>Create Query</h5>
