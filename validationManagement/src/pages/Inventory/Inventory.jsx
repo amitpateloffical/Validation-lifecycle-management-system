@@ -276,7 +276,7 @@ export default function Inventory() {
             </div>
           ) : null}
         </div>
-        <div className="col-span-3 shadow-lg">
+        <div className="col-span-3 overflow-y-auto shadow-lg h-[760px]">
           {trackwiseForm ? (
             <div className="p-3">
               <h5>Entity Details</h5>
@@ -1321,7 +1321,7 @@ export default function Inventory() {
             </div>
           ) : null}
         </div>
-        <div className="col-span-3 shadow-lg">
+        <div className="col-span-3 shadow-lg overflow-y-auto h-[760px]">
           {trackwiseForm ? (
             <div className="p-3">
               <h5>Entity Details</h5>
@@ -1777,7 +1777,6 @@ export default function Inventory() {
                     <tbody>
                       <tr>
                         <td className="p-2 border border-black">1</td>
-
                         <td className="p-2 border border-black">
                           Q/SCH/2024/007
                         </td>
@@ -2303,7 +2302,7 @@ export default function Inventory() {
                 </div>
               </div>
             </div>
-            <div></div>
+            <div></div> 
             <div></div>
           </div>
           <div className="flex justify-between ">
